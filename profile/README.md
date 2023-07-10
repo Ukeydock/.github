@@ -45,6 +45,7 @@
 프론트 작업은 ReactJS를 사용하였으며 
 - [따라하며 배우는 리액트(인프런)](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A6%AC%EC%95%A1%ED%8A%B8/dashboard)
 - React 공식문서
+
 를 주로 사용해 진행하였습니다.
 
 UI와 UX는 현재 세계적인 OTT인 넷플릭스를 참고해 작성하였으며 코드의 일부는 강의를 활용해 제작했습니다.
@@ -62,6 +63,7 @@ Css는 [Gwonyeong css- flex 개인 블로그](https://velog.io/@kwanyung/css-fle
 - [탄탄한 백엔드 NestJS, 기초부터 심화까지(인프런)](https://www.inflearn.com/course/%ED%83%84%ED%83%84%ED%95%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EB%84%A4%EC%8A%A4%ED%8A%B8/dashboard)
 - Nest 공식문서
 - [NestJS로 배우는 백엔드 프로그래밍(도서)](https://www.yes24.com/Product/Goods/115850682)
+
 등을 활용해 진행했습니다.
 
 기본적인 구조계층은 3-Layer Architecture 구조를 사용하였고 QueryBuilder라는 폴더를 작성해 복잡한 Select 쿼리를 작성하는 DB연결 로직을 추가해 작성하였습니다.
