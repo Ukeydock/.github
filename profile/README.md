@@ -1,15 +1,109 @@
-## 안녕하세요! 8개월의 경력을 가진 2년차를 향해 달려가는 백앤드 개발자 조권영입니다. 
+## 안녕하세요! 8개월의 경력을 가진 2년차를 향해 달려가는 백앤드 개발자 조권영입니다. 
 - 제 개인 프로젝트인 Ukeydock을 소개해드리겠습니다.
 - 방문해주셔서 감사합니다.
 
+## [Ukeydock](https://d162zcuhik6wu9.cloudfront.net/)
 
-<!--
+순서
+- [프로젝트 소개(기획)](#introduce)
+- [프로젝트 소개(개발)](#introduce-dev)
 
-**Here are some ideas to get you started:**
+## <a name="introduce"> 프로젝트 소개(기획)</a> 
+한글로 유키독은 '유튜브 키워드 구독' 의 줄임말입니다. 
+유튜브 영상을 자주 시청하며 내가 원하는 키워드를 등록해놓고 그 키워드의 영상이 업데이트 될 때마다 시청할 수 있다면 편리하지 않을까? 라는 생각에서 출발한 프로젝트입니다. 
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+유키독에서 유저는 다음 세가지에 속한 키워드를 구독해놓고, 해당 키워드를 이용해 유튜브에서 검색한 비디오들을 시청할 수 있습니다.
+
+- [구글 트랜드](https://trends.google.co.kr/trends/trendingsearches/daily?geo=KR&hl=ko)
+  - 구글 트랜드에서 제공하는 실시간 검색어를 이용해 유튜브에서 비디오를 검색하고 DB에 저장합니다.
+- 넷플릭스 영화
+  - 많은 드라마, 영화가 쏟아져 나오는 현대에서 드라마와 영화를 요약해 제공해주는 유튜브 영상은 가치가 있을 것이라 생각했습니다.
+  - [더 무비 api](https://www.themoviedb.org/?language=ko-KR)를 이용해 넷플릭스의 영화, 드라마의 제목을 DB에 저장해두고 하루 단위로 일정한 갯수의 키워드를 사용합니다.
+  - 넷플릭스 (영화 제목) 요약 이라는 키워드로 유튜브에서 검색한 비디오를 저장합니다.
+- 한국의 가수
+  - 한국의 가수 100명을 DB에 저장하고, 하루 단위로 일정한 갯수의 키워드를 사용합니다.          
+  - ChatGPT를 이용해 가수의 리스트를 추천받아 사용합니다.
+ 
+이외에도 다양한 주제의 키워드를 최대한 자동으로 가져오는 방향으로 추가할 예정입니다.
+
+![스크린샷 2023-07-10 오후 4 52 34](https://github.com/Ukeydock/.github/assets/71562311/714d9c77-0a81-4088-a578-afabafb53933)
+
+위의 스크린샷과 같이 세가지 주제에 따라 실시간 키워드 추천에 따라 키워드를 추천받고, 원하는 키워드를 구독해 비디오를 찾아볼 수 있습니다.
+
+![스크린샷 2023-07-10 오후 4 56 06](https://github.com/Ukeydock/.github/assets/71562311/d2638054-1165-4ba8-860c-59f931e02f6c)
+
+우측 상단의 자신의 프로필 이미지를 클릭하면 개인 유저페이지로 이동해 다양한 서비스를 제공받습니다.
+(다른 유저의 유저페이지도 이동이 가능합니다.)
+
+## <a name="introduce-dev"> 프로젝트 소개(개발)</a>
+
+<b>이 유키독 프로젝트는 Gwonyeong의 닉네임을 사용하고 있는 개발자 조권영에 의해 프론트, 백엔드, aws를 이용한 인프라 작업을 통해 진행되었습니다. </b>
+
+<b>프론트엔드와 백엔드의 코드는 모두 Type Script를 활용해 작성되었습니다.</b>
+
+---
+프론트 작업은 ReactJS를 사용하였으며 
+- [따라하며 배우는 리액트(인프런)](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A6%AC%EC%95%A1%ED%8A%B8/dashboard)
+- React 공식문서
+를 주로 사용해 진행하였습니다.
+
+UI와 UX는 현재 세계적인 OTT인 넷플릭스를 참고해 작성하였으며 코드의 일부는 강의를 활용해 제작했습니다.
+
+Css는 [Gwonyeong css- flex 개인 블로그](https://velog.io/@kwanyung/css-flex) 의 문서에서 확인할 수 있듯, Flex-box를 혼자 학습하여 구성하였습니다.
+
+대부분의 함수는 useState와 useEffect를 활용하였습니다. 
+
+자세한 내용은 다음의 문서에서 확인하실 수 있습니다. 
+- [Ukeydock ReactJS](https://github.com/Ukeydock/ReactJS)
+
+---
+
+백엔드 작업은 NestJS를 사용하였으며 
+- [탄탄한 백엔드 NestJS, 기초부터 심화까지(인프런)](https://www.inflearn.com/course/%ED%83%84%ED%83%84%ED%95%9C-%EB%B0%B1%EC%97%94%EB%93%9C-%EB%84%A4%EC%8A%A4%ED%8A%B8/dashboard)
+- Nest 공식문서
+- [NestJS로 배우는 백엔드 프로그래밍(도서)](https://www.yes24.com/Product/Goods/115850682)
+등을 활용해 진행했습니다.
+
+기본적인 구조계층은 3-Layer Architecture 구조를 사용하였고 QueryBuilder라는 폴더를 작성해 복잡한 Select 쿼리를 작성하는 DB연결 로직을 추가해 작성하였습니다.
+
+Database는 Mysql을 활용하였고 8.xx 버전으로 진행했습니다. 
+
+@Cron 데코레이터를 이용해 한국시간으로 자정마다 키워드를 데이터베이스, 또는 구글 토랜드 등의 사이트에서 크롤링하는 방법으로 선정한 뒤에 Google Youtube API를 이용하여 해당 키워드의 검색 결과를 데이터베이스에 저장합니다.
+
+자세한 내용은 다음의 문서에서 확인하실 수 있습니다.
+- [Ukeydock NestJS](https://github.com/Ukeydock/NestJS)
+
+---
+  
+서버 배포에 사용하는 서버 인프라는 AWS를 사용하였으며 다음의 서비스들을 활용하였습니다.
+
+1. EC2
+2. S3 & Cloud Front
+
+## EC2
+- 백엔드 서버를 위해 t2-micro의 프리티어 서버를 사용하는 인스턴스를 사용합니다.
+- 개발서버와 배포서버를 다르게 하고 nginx등을 효율적으로 사용하기 위해 EC2 안에 도커를 설치한 뒤 포트번호가 다른 컨테이너를 실행해 서버를 관리합니다.
+- Route53에서 도메인을 구입한 뒤 SSL인증서를 발급받아 로드밸런서를 작성해 도메인이 백엔드 서버로 연결되도록 구축하였습니다.
+- ECR을 활용해 도커 이미지들을 관리하고 github에 새로운 코드가 커밋되면 컨테이너를 교체해주는 방법으로 CD를 구축하였습니다.
+
+## S3 & Cloud Front
+- build를 실행해 빌드된 리액트 파일을 s3에 저장합니다.
+- CDN에서는 해당 s3를 바라보도록 설정하여 프론트 정적 파일을 사용자에게 출력합니다.
+- CDN에서 제공해주는 도메인을 이용해 사용자에게 서비스를 제공합니다.
+
+이 밖에도 RDS를 이용해 데이터베이스를 구축하고 Mysql Workbench를 활용해 데이터베이스를 관리하였으며
+
+IAM에서 적절한 권한을 부여해 서비스를 관리하는 계정을 생성하고 사용하였습니다. 
+
+---
+
+여기까지 유키독 서비스를 소개드렸습니다. 감사합니다!
+
+
+
+
+
+
+
+
+
