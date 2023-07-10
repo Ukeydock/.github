@@ -2,7 +2,7 @@
 - 제 개인 프로젝트인 Ukeydock을 소개해드리겠습니다.
 - 방문해주셔서 감사합니다.
 
-## [Ukeydock](https://d162zcuhik6wu9.cloudfront.net/)
+## [Ukeydock 서비스 링크](https://d162zcuhik6wu9.cloudfront.net/)
 
 순서
 - [프로젝트 소개(기획)](#introduce)
