@@ -46,7 +46,7 @@
 - [따라하며 배우는 리액트(인프런)](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%A6%AC%EC%95%A1%ED%8A%B8/dashboard)
 - React 공식문서
 
-를 주로 사용해 진행하였습니다.
+를 주로 활용해 진행하였습니다.
 
 UI와 UX는 현재 세계적인 OTT인 넷플릭스를 참고해 작성하였으며 코드의 일부는 강의를 활용해 제작했습니다.
 
