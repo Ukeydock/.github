@@ -55,8 +55,6 @@ Css는 [Gwonyeong css- flex 개인 블로그](https://velog.io/@kwanyung/css-fle
 
 대부분의 함수는 useState와 useEffect를 활용하였습니다. 
 
-자세한 내용은 다음의 문서에서 확인하실 수 있습니다. 
-- [Ukeydock ReactJS](https://github.com/Ukeydock/ReactJS)
 
 ---
 
