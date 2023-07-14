@@ -69,7 +69,7 @@ Css는 [Gwonyeong css- flex 개인 블로그](https://velog.io/@kwanyung/css-fle
 
 Database는 Mysql을 활용하였고 8.xx 버전으로 진행했습니다. 
 
-@Cron 데코레이터를 이용해 한국시간으로 자정마다 키워드를 데이터베이스에서 찾아오거나 구글 토랜드 사이트에서 크롤링하는 방법으로 선정한 뒤에 Google Youtube API를 이용하여 해당 키워드의 검색 결과를 데이터베이스에 저장합니다.
+@Cron 데코레이터를 이용해 한국시간으로 자정마다 키워드를 데이터베이스에서 찾아오거나 구글 트랜드 사이트에서 크롤링하는 방법으로 선정한 뒤에 Google Youtube API를 이용하여 해당 키워드의 검색 결과를 데이터베이스에 저장합니다.
 
 자세한 내용은 다음의 문서에서 확인하실 수 있습니다.
 - [Ukeydock NestJS](https://github.com/Ukeydock/NestJS)
